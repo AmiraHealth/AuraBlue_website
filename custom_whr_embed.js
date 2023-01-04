@@ -149,7 +149,7 @@ function whr_embed(e, t) {
                                     case "country":
                                     case "countries":
                                         whr.each(e.jobs, function(t) {
-                                            e.jobs[t].displocation = e.jobs[t].country, (e.jobs[t].state || e.jobs[t].city) && (e.jobs[t].displocation += o), e.jobs[t].displocation += e.jobs[t].state, e.jobs[t].city && (e.jobs[t].displocation += o), e.jobs[t].displocation += e.jobs[t].city
+                                            e.jobs[t].displocation = e.jobs[t].city, (e.jobs[t].state || e.jobs[t].country) && (e.jobs[t].displocation += o), e.jobs[t].displocation += e.jobs[t].state, e.jobs[t].country && (e.jobs[t].displocation += o), e.jobs[t].displocation += e.jobs[t].country
                                         });
                                         break;
                                     case "state":
